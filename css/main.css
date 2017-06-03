@@ -3,5 +3,197 @@ body {
   font-size: 16px;
   line-height: 1.71429;
   background-color: #fff;
-  /* Enlaza la tipografia Open Sans */
+  font-family: 'Open Sans', sans-serif;
 }
+
+/* Contenedor Flexbox */
+
+.flex-container {
+	display: flex;
+}
+
+/* Menú */
+
+.menu {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.menu.flex-container {
+	justify-content: flex-start;
+}
+
+.logo-container {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.flex-container .logo {
+	width: 70px;
+	height: 70px;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+.link{
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+}
+
+/* Home */
+
+#home {
+	height: 600px;
+	margin-top: 70px;
+
+	background-image: url(../assets/images/bg-home.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed; 
+	background-repeat: no-repeat;
+
+	justify-content: center; 
+	align-items: center; 
+	flex-direction: column; 
+
+	color: whitesmoke;
+}
+
+.text-home {
+	font-size: 2.4em;
+}
+
+.btn-home {
+  background: #2Ecc71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+
+/* Services */
+
+#services {
+	background-color: #F17C72;
+	text-align: center;
+	color: #fff;
+	padding: 70px;
+}
+
+#services.flex-container { 
+	justify-content: space-around; 
+	flex-wrap: wrap;
+}
+
+.box-services {
+	font-size: 1.2em;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.img-sevices {
+	width: 250px;
+}
+
+/* Work */
+
+.img-fondo-work {
+	width: 100%;
+}
+
+#fondo-work.flex-container {
+	flex-direction: column;
+	align-items: center;
+}
+
+#fondo-work p {
+	padding: 0 60px;
+	text-align: center;
+}
+
+/*----------- SECTION PROYECTO -----------*/
+#img-work-fotos {
+	background-color: white;
+	text-align: center;
+	padding: 20px 50px;
+}
+
+#img-work-fotos.flex-container { 
+	flex-direction: row; 
+	justify-content: center;
+}
+
+.img-work {
+	width: 350px;
+	padding: 0 30px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.img-pro {
+	width: auto;	
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  height: 70px;
+  background-color: #373b47;
+  color: white;
+  padding-top: 7px;
+}
+
+/* Modal */
+
+.hide {
+  display: none;
+}
+
+#img-work-modal {
+  background-color: rgba(45,206,175,0.90); 
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-completo {
+  width: 600px;
+  height: 500px;
+  background-color: white; 
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  padding: 10px;
+}
+
+.equis-img {
+  color: whitesmoke; 
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
